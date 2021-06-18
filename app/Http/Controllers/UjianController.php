@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class UjianController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource.p
      *
      * @return \Illuminate\Http\Response
      */

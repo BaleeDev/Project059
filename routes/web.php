@@ -15,10 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// CRUD
-Route::get('/ujian', 'UjianController@index');
-Route::get('/ujian/{ujian}/edit', 'UjianController@edit');
-Route::patch('/ujian/{ujian}', 'UjianController@update');
-Route::post('/ujian', 'UjianController@store');
-Route::delete('/ujian/{ujian}', 'UjianController@destroy');
-Route::get('/ujian/add', 'UjianController@create');
+// // CRUD
+// Route::get('/ujian', 'UjianController@index');
+// Route::get('/ujian/{ujian}/edit', 'UjianController@edit');
+// Route::patch('/ujian/{ujian}', 'UjianController@update');
+// Route::post('/ujian', 'UjianController@store');
+// Route::delete('/ujian/{ujian}', 'UjianController@destroy');
+// Route::get('/ujian/add', 'UjianController@create');
+
+
+// uts
+Route::get('/mid', 'UtsController@index');
+Route::get('/mid/{mid}/edit', 'UtsController@edit');
+Route::post('/mid', 'UtsController@store');
+Route::delete('/mid/{midsemester}', 'UtsController@destroy');
+Route::get('/mid/add', 'UtsController@create');
