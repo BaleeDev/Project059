@@ -16,12 +16,12 @@ Route::get('/', function () {
 });
 
 // // CRUD
-// Route::get('/ujian', 'UjianController@index');
-// Route::get('/ujian/{ujian}/edit', 'UjianController@edit');
-// Route::patch('/ujian/{ujian}', 'UjianController@update');
-// Route::post('/ujian', 'UjianController@store');
-// Route::delete('/ujian/{ujian}', 'UjianController@destroy');
-// Route::get('/ujian/add', 'UjianController@create');
+Route::get('/ujian', 'UjianController@index');
+Route::get('/ujian/{ujian}/edit', 'UjianController@edit');
+Route::patch('/ujian/{ujian}', 'UjianController@update');
+Route::post('/ujian', 'UjianController@store');
+Route::delete('/ujian/{ujian}', 'UjianController@destroy');
+Route::get('/ujian/add', 'UjianController@create');
 
 
 // uts
