@@ -30,3 +30,7 @@ Route::get('/mid/{mid}/edit', 'UtsController@edit');
 Route::post('/mid', 'UtsController@store');
 Route::delete('/mid/{midsemester}', 'UtsController@destroy');
 Route::get('/mid/add', 'UtsController@create');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
