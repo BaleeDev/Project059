@@ -20,3 +20,4 @@ Route::get('/task','TaskController@index');
 Route::get('/task/{task}','TaskController@show');
 Route::delete('/task/{task}','TaskController@destroy');
 Route::post('/task/','TaskController@store');
+Route::patch('/task/{task}','TaskController@update');
